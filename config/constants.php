@@ -1,11 +1,12 @@
 <?php
+
 return [
     'docs' => [
         'base_url' => 'https://coolify.io/docs',
         'contact' => 'https://coolify.io/docs/contact',
     ],
     'ssh' => [
-        'mux_persist_time' => env('SSH_MUX_PERSIST_TIME', "1m"),
+        'mux_persist_time' => env('SSH_MUX_PERSIST_TIME', '1m'),
         'connection_timeout' => 10,
         'server_interval' => 20,
         'command_timeout' => 7200,
@@ -32,6 +33,7 @@ return [
             'basic' => env('LIMIT_SERVER_BASIC', 2),
             'pro' => env('LIMIT_SERVER_PRO', 10),
             'ultimate' => env('LIMIT_SERVER_ULTIMATE', 25),
+            'dynamic' => env('LIMIT_SERVER_DYNAMIC', 2),
         ],
         'email' => [
             'zero' => true,
@@ -39,6 +41,7 @@ return [
             'basic' => true,
             'pro' => true,
             'ultimate' => true,
+            'dynamic' => true,
         ],
     ],
 ];
